@@ -1,0 +1,491 @@
+[
+  {
+    "description": "    Login functinality validation",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;verify-login-with-valid-credentails",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify login with valid credentails",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4368134000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3767355599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enters credentails",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1290761600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should login successfully",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19495199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2196610100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9451000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          },
+          {
+            "name": "@login",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Login with multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4223804499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3669705899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1260096799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should view the error message",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16369900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2440397300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9610000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Login with multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3965091699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3608645099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters \"problem_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1290561699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should view the error message",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19059399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2415907400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9580400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Login with multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1840607100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3443687800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters \"performance_glitch_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5654547899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should view the error message",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4215299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 677848899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2373599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Login with multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4615368600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2043335299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters \"error_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555632900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should view the error message",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2780300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1710972999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46748400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Login with multiple users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2013539300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User opens the application",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3165760099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters \"visual_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 959636500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User should view the error message",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6481400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2725399199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9820999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
