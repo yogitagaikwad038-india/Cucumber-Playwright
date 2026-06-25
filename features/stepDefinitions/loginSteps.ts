@@ -25,21 +25,14 @@ Then('User should login successfully',async function (this:CustomWorld) {
     console.log("Login successfully")      
 });
 
-When('User enters {string} and {string}', async function (string, string2) {
+When('User enters {string} and {string}', async  function (string, string2) {
 
-     await login.loginwithmultipleusers(string, string2);
-         
+    await login.loginwithmultipleusers(string,string2);
+          
 });
-
+       
 Then('User should view the error message', function () {
 
     console.log("error displayed");
-           
+          
 });
-
-
-//npx ts-node report.ts
-
-//npx cucumber-js --parallel 3
-
-//npx cucumber-js --parallel 4 --tags "@smoke"

@@ -8,8 +8,6 @@ setDefaultTimeout(
 
 Before( async function(this:CustomWorld){
 
-   
-
     this.browser = await chromium.launch({headless:false});
 
     this.context = await this.browser.newContext();
@@ -18,11 +16,9 @@ Before( async function(this:CustomWorld){
 
 });
 
-
 After (async function(this:CustomWorld){
 
     await this.browser.close();
-
 });
 
 // take the screen shot if the scenario is failing 
