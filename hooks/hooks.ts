@@ -1,43 +1,34 @@
-import {Before , After,setDefaultTimeout } from '@cucumber/cucumber';
-import {CustomWorld} from '../support/world';
-import {chromium} from '@playwright/test';
+export {};
 
-setDefaultTimeout(
-60000
-);
+const path = require('path');
+const cucumberModule = require(path.resolve(__dirname, '../../node_modules/@cucumber/cucumber'));
+const {
+  Before,
+  After,
+  setDefaultTimeout
+} = cucumberModule;
 
-Before( async function(this:CustomWorld){
+const {
+  chromium
+} = require('@playwright/test');
 
-    this.browser = await chromium.launch({headless:true});
+setDefaultTimeout(30000);
 
-    this.context = await this.browser.newContext();
+let browser: any;
+let page: any;
 
-    this.page = await this.context.newPage();
+Before(async function (this: any) {
 
+  browser = await chromium.launch({
+    headless: false
+  });
+
+  page = await browser.newPage();
+
+  this.page = page;
 });
 
-After (async function(this:CustomWorld){
+After(async function () {
 
-    await this.browser.close();
+  await browser?.close();
 });
-
-// take the screen shot if the scenario is failing 
-
-After(async function (scenario) {
-
-if (scenario.result?.status ==='FAILED') {
-
-await this.page.screenshot({
-
-    path:
-    `reports/${Date.now()}.png`});
-    }
-
-    await this.browser.close();
-
-});
-
-
-    
-
-

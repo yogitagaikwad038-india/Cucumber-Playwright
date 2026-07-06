@@ -1,38 +1,158 @@
-import {Given,When,Then} from '@cucumber/cucumber';
-import {LoginPage} from '../../pages/LoginPage'
-import {CustomWorld} from '../../support/world'
- 
- 
-let login : LoginPage;
+export {};
 
-Given('User opens the application', async function (this:CustomWorld) {
+const path = require('path');
+const cucumberModule = require(path.resolve(__dirname, '../../../node_modules/@cucumber/cucumber'));
+const { Given, When, Then } = cucumberModule;
+const { FlightPage } = require('../../pages/FlightsPage');
+const { SearchResultPage } = require('../../pages/SearchResultPage');
 
-    login = new LoginPage(this.page);
-    await login.openApp();       
-});
-       
+let flightPage: any;
+let resultPage: any;
 
-       
-When('User enters credentails', async function (this:CustomWorld){
+Given('User launches PHP Travels flight page',async function (this: any) {
 
-     await login.login(); 
-});
-       
+    flightPage = new FlightPage(this.page);
 
-       
-Then('User should login successfully',async function (this:CustomWorld) {
-  
-    console.log("Login successfully")      
-});
+    resultPage = new SearchResultPage(this.page);
 
-When('User enters {string} and {string}', async  function (string, string2) {
+    await flightPage.navigate();
+  }
+);
 
-    await login.loginwithmultipleusers(string,string2);
-          
-});
-       
-Then('User should view the error message', function () {
+When('User selects one way trip', async function () {
 
-    console.log("error displayed");
-          
-});
+    await flightPage.selectOneWay();
+  }
+);
+
+When('User selects round trip',async function () {
+
+    await flightPage.selectRoundTrip();
+  }
+);
+
+When('User selects multi city trip',async function () {
+
+    await flightPage.selectMultiCity();
+  }
+);
+
+When('User enters source city {string}', async function (this: any, city: string) {
+
+    await flightPage.enterSourceCity(city);
+  }
+);
+
+When('User enters destination city {string}',async function (this: any, city: string) {
+
+    await flightPage.enterDestinationCity(city);
+  }
+);
+
+When('User selects departure date',async function () {
+
+    await flightPage.selectDepartureDate();
+  }
+);
+
+When('User selects return date',async function () {
+
+    await flightPage.selectReturnDate();
+  }
+);
+
+When('User selects 2 adults',async function () {
+
+    await flightPage.selectAdults(2);
+  }
+);
+
+When('User selects 1 child',async function () {
+
+    await flightPage.selectChildren(1);
+  }
+);
+
+When('User selects business class',async function () {
+
+    await flightPage.selectBusinessClass();
+  }
+);
+
+When('User clicks search button',async function () {
+
+    await flightPage.clickSearch();
+  }
+);
+
+When('User performs flight search',async function () {
+
+    await flightPage.selectOneWay();
+
+    await flightPage.enterSourceCity('Pune');
+
+    await flightPage.enterDestinationCity('Delhi');
+
+    await flightPage.clickSearch();
+  }
+);
+
+When('User sorts flights by price',async function () {
+
+    await resultPage.verifyPriceSorting();
+  }
+);
+
+When('User selects airline filter',async function () {
+
+    await resultPage.verifyAirlineFilter();
+  }
+);
+
+When('User selects first available flight',async function () {
+
+    await flightPage.selectFirstFlight();
+  }
+);
+
+When('User enters passenger details',async function () {
+
+    await flightPage.enterPassengerDetails();
+  }
+);
+
+When('User enters contact details',async function () {
+
+    await flightPage.enterContactDetails();
+  }
+);
+
+Then('Flight results should be displayed',async function () {
+
+    await resultPage.verifyResultsDisplayed();
+  }
+);
+
+Then('Verify results are displayed',async function () {
+
+    await resultPage.verifyResultsDisplayed();
+  }
+);
+
+Then('Flights should be sorted by ascending price',async function () {
+
+    await resultPage.verifyPriceSorting();
+  }
+);
+
+Then('Filtered flights should be shown',async function () {
+
+    await resultPage.verifyAirlineFilter();
+  }
+);
+
+Then('Booking summary should be displayed',async function () {
+
+    await resultPage.verifyBookingSummary();
+  }
+);
