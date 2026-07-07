@@ -133,7 +133,8 @@
   },
   "scripts": {
     "test": "cucumber-js --config cucumber.js",
-    "test:headless": "cucumber-js --config cucumber.js --parallel 1"
+    "test:headless": "cucumber-js --config cucumber.js --parallel 1",
+    "test:report": "cucumber-js --config cucumber.js && npx ts-node report.ts"
   },
   "keywords": [],
   "author": "",

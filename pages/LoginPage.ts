@@ -25,8 +25,7 @@ await this.page.goto(
 
 async login() {
 
-console.log(
-'Entering credentials');
+console.log('Entering credentials');
 
 // Example
 await this.page.fill('input[name="user-name"]','standard_user');

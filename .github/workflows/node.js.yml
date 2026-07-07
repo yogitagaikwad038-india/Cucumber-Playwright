@@ -39,7 +39,7 @@ jobs:
 
       - name: Generate Cucumber Report
         if: always()
-        run: node report.ts
+        run: npx ts-node report.ts
 
       - name: Upload Test Report
         if: always()

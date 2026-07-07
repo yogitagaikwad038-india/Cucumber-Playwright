@@ -1,0 +1,1066 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "authentication-flow;user-logs-in,-registers,-and-continues-to-the-next-step",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User logs in, registers, and continues to the next step",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 263127899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User opens the authentication demo page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97252100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User logs in with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88605500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login should be successful",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14862500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User registers with full name \"Test User\" email \"test@example.com\" and password \"Test@1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99051999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Registration should be successful",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3917100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User proceeds to the next step",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41530800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The next step should be completed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3575600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73641400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@auth",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "authentication-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Authentication flow",
+    "tags": [],
+    "uri": "features\\authentication.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;one-way-flight-search",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "One Way Flight Search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 240482600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User launches PHP Travels flight page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4876906699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117798300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;one-way-flight-search",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "One Way Flight Search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 249107300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User selects one way trip",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 688799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User enters source city \"Pune\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 667099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters destination city \"Delhi\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2262899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User selects departure date",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16771000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1705700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 103443800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@oneway",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;round-trip-flight-search",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Round Trip Flight Search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 254087700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User selects round trip",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 426600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User enters source city \"Mumbai\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "User enters destination city \"Bangalore\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User selects departure date",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User selects return date",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 771099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1632799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110161700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@roundtrip",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;multi-city-flight-search",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Multi City Flight Search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 284761099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User selects multi city trip",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User enters source city \"Pune\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 400000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "User enters destination city \"Delhi\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 334800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1195299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 190591500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multicity",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;search-with-adult-count",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Search With Adult Count",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 320288599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "User selects one way trip",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "User selects 2 adults",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 260099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1056399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106203499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adult",
+            "line": 39
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;search-with-child-count",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Search With Child Count",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 589002899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "User selects one way trip",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 624800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "User selects 2 adults",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "User selects 1 child",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 454699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 618300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7399999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 649320900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@child",
+            "line": 47
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;search-with-business-class",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "Search With Business Class",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239282699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "User selects business class",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "User clicks search button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54067700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "Flight results should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1649000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85779499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@business",
+            "line": 56
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;verify-flight-results",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "Verify Flight Results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 265602299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 66,
+            "name": "User performs flight search",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4147700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "Verify results are displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1507100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 96682899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@results",
+            "line": 63
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;verify-price-sorting",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Verify Price Sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 262169599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "User performs flight search",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1060800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "User sorts flights by price",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1288000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "Flights should be sorted by ascending price",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:170"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1124700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95193199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sorting",
+            "line": 69
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;verify-airline-filters",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Verify Airline Filters",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239413599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "User performs flight search",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3228199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "User selects airline filter",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:134"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6520599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 81,
+            "name": "Filtered flights should be shown",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:176"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1180299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 115624400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@filter",
+            "line": 76
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "php-travels-flight-booking;complete-flight-booking-flow",
+        "keyword": "Scenario",
+        "line": 84,
+        "name": "Complete Flight Booking Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 244531099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 86,
+            "name": "User performs flight search",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2680400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "User selects first available flight",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 897800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "User enters passenger details",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 414499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "User enters contact details",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:152"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "Booking summary should be displayed",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.ts:182"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1279500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87797200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@booking",
+            "line": 83
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "php-travels-flight-booking",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "PHP Travels Flight Booking",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

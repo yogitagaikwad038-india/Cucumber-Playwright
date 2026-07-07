@@ -1,13 +1,60 @@
-export {};
+import * as fs from 'fs';
+import * as path from 'path';
 
-const path = require('path');
-const cucumberModule = require(path.resolve(__dirname, '../../../node_modules/@cucumber/cucumber'));
+const cucumberModule = (() => {
+  const candidates = [
+    path.resolve(process.cwd(), 'node_modules/@cucumber/cucumber'),
+    path.resolve(__dirname, '../../node_modules/@cucumber/cucumber'),
+    path.resolve(__dirname, '../../../node_modules/@cucumber/cucumber')
+  ];
+
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) {
+      return require(candidate);
+    }
+  }
+
+  return require('@cucumber/cucumber');
+})();
+
 const { Given, When, Then } = cucumberModule;
+
 const { FlightPage } = require('../../pages/FlightsPage');
 const { SearchResultPage } = require('../../pages/SearchResultPage');
+const { AuthPage } = require('../../pages/AuthPage');
 
 let flightPage: any;
 let resultPage: any;
+let authPage: any;
+
+Given('User opens the authentication demo page', async function (this: any) {
+  authPage = new AuthPage(this.page);
+  await authPage.openApp();
+});
+
+When('User logs in with username {string} and password {string}', async function (this: any, username: string, password: string) {
+  await authPage.login(username, password);
+});
+
+When('User registers with full name {string} email {string} and password {string}', async function (this: any, fullName: string, email: string, password: string) {
+  await authPage.register(fullName, email, password);
+});
+
+When('User proceeds to the next step', async function () {
+  await authPage.proceedToNextStep();
+});
+
+Then('Login should be successful', async function () {
+  await authPage.verifyLoginSuccess();
+});
+
+Then('Registration should be successful', async function () {
+  await authPage.verifyRegistrationSuccess();
+});
+
+Then('The next step should be completed', async function () {
+  await authPage.verifyNextStep();
+});
 
 Given('User launches PHP Travels flight page',async function (this: any) {
 

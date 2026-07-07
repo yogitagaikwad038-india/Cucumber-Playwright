@@ -5,11 +5,16 @@ module.exports = {
     ],
     require: [
       "features/stepDefinitions/**/*.ts",
-      "hooks/**/*.ts"
+      "hooks/**/*.ts",
+      "support/**/*.ts"
     ],
     requireModule: [
       "ts-node/register"
     ],
-    format: ["progress"]
+    format: [
+      "progress",
+      "json:reports/cucumber-report.json",
+      'allure-cucumberjs/reporter'
+    ]
   }
 };

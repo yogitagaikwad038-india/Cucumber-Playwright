@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication Demo</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      form { margin-bottom: 1rem; }
+      input, button { display: block; margin: 0.5rem 0; padding: 0.4rem; }
+      #message { font-weight: bold; color: #0b5fff; }
+      #register-form { display: none; }
+    </style>
+  </head>
+  <body>
+    <h1>Authentication Demo</h1>
+    <div id="message"></div>
+
+    <form id="login-form">
+      <input id="login-username" placeholder="Username" />
+      <input id="login-password" type="password" placeholder="Password" />
+      <button id="login-btn" type="submit">Login</button>
+    </form>
+
+    <button id="show-register" type="button">Show Register Form</button>
+
+    <form id="register-form">
+      <input id="register-name" placeholder="Full Name" />
+      <input id="register-email" placeholder="Email" />
+      <input id="register-password" type="password" placeholder="Password" />
+      <button id="register-btn" type="submit">Register</button>
+    </form>
+
+    <button id="next-step" type="button" style="display:none">Next Step</button>
+
+    <script>
+      const message = document.getElementById('message');
+      const registerForm = document.getElementById('register-form');
+      const nextStepButton = document.getElementById('next-step');
+
+      document.getElementById('login-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        message.textContent = 'Login successful';
+        nextStepButton.style.display = 'inline-block';
+      });
+
+      document.getElementById('show-register').addEventListener('click', () => {
+        registerForm.style.display = 'block';
+      });
+
+      document.getElementById('register-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        message.textContent = 'Registration successful';
+        nextStepButton.style.display = 'inline-block';
+      });
+
+      nextStepButton.addEventListener('click', () => {
+        message.textContent = 'Next step completed';
+      });
+    </script>
+  </body>
+</html>
